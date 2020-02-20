@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:import url="/WEB-INF/monDocument.xml" varReader="monReader">
+	<c:import url="monDocument.xml" varReader="monReader">
 		<%-- Parse le contenu du fichier XML monDocument.xml dans une variable nommée 'doc' --%>
 		<x:parse var="doc" doc="${ monReader }"></x:parse>
 		<x:out select="$doc/news/article/auteur" />
