@@ -11,7 +11,9 @@
 	<body>
 		<c:import varReader="xslFile" url="test.xsl">
 			<c:import varReader="xmlFile" url="monDocument.xml">
-				<x:transform doc="${ xmlFile }" xslt="${ xslFile }" />
+				<x:transform doc="${ xmlFile }" xslt="${ xslFile }">
+					<x:param name="couleur" value="orange" />
+				</x:transform>
 			</c:import>
 		</c:import>
 	</body>
